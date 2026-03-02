@@ -145,17 +145,25 @@ body, html {
     overflow: visible;
     padding-top: 60px;        /* ensures hero image below navbar */
   }
+.hero-img {
+  position: static !important; 
+  width: 95%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
 
-  .hero-img {
-    position: static !important; 
-    width: 95%;               /* almost full width */
-    max-width: 500px;         /* stops image from getting too large */
-    height: auto;
-    margin: 0 auto;
-    transform: none !important;
-    opacity: 1 !important;
-    object-fit: cover;        /* fill nicely but keep aspect ratio */
+  transform: none !important;   /* keep layout exactly as is */
+  opacity: 0;
+
+  animation: fadeInMobile 5s ease forwards;
+
+  object-fit: cover;
+}
+@keyframes fadeInMobile {
+  to {
+    opacity: 1;
   }
+}
 
   .hero-text {
     position: static !important;
@@ -202,4 +210,3 @@ body, html {
 
 </body>
 </html>
-
