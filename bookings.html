@@ -71,10 +71,9 @@ body, html {
 .calendar-note {
   text-align: center;
   margin: 10px 0 20px 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: gold;
   text-shadow: 0 0 10px red, 0 0 20px gold;
-  
 }
 
 /* CALENDAR WRAPPER */
@@ -213,7 +212,6 @@ button:hover {
 
 <h2 class="section-title">Check Availability</h2>
 
-<!-- ================= NOTE ADDED UNDER CHECK AVAILABILITY ================= -->
 <div class="calendar-note">
   Booked days will appear 30 seconds to a minute after visiting
 </div>
@@ -231,7 +229,12 @@ button:hover {
   </div>
 </div>
 
+<!-- ================= BOOKING FORM NOTE ADDED ================= -->
 <h2 class="section-title">Submit Booking Request</h2>
+
+<div class="calendar-note">
+  ⚠️ If a confirmation email for your event is not emailed to you within 24 hours, please contact DJ Angi.
+</div>
 
 <div class="deposit-instruction">
   ⚠️ Please send your required deposit via Zelle BEFORE submitting this booking form.<br><br>
@@ -266,8 +269,12 @@ id="bookingForm">
   Thank you for booking!
 </div>
 
-<!-- ================= CANCELLATION FORM ================= -->
+<!-- ================= CANCELLATION FORM NOTE ADDED ================= -->
 <h2 class="section-title">Request to Cancel Your Event</h2>
+
+<div class="calendar-note">
+  ⚠️ if  your Cancellation request is not  confirmaed  to your email  within 24 hours please Contact DJ Angi 
+</div>
 
 <div class="deposit-instruction">
   ⚠️ Please make sure all information is correct before submitting your cancellation request.<br><br>
@@ -296,7 +303,7 @@ id="bookingForm">
   Your cancellation has been submitted!
 </div>
 
-<!-- 🔥 FIXED GOOGLE SHEETS CONNECTED CALENDAR SCRIPT -->
+<!-- ================= CALENDAR SCRIPT ================= -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
